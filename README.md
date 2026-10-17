@@ -4,14 +4,13 @@ A responsive product preview card for Gabrielle Essence Eau de Parfum, built wit
 
 ## Preview
 
-**Live demo:** [View the deployed site](https://6ad0c2afd6510a13325a1641--lovely-marzipan-faaced.netlify.app/)
+**Live demo:** [View the deployed site](https://lovely-marzipan-faaced.netlify.app/)
 **Source code:** [GitHub repository](https://github.com/yasmin3802/product-preview-card-component)
 
-### Desktop
-![Desktop view of the Gabrielle Essence product preview card with the image on the left and product details on the right](./screenshots/desktop.png)
-
-### Mobile
-![Mobile view of the product preview card with the image stacked above the product details](./screenshots/mobile.png)
+<p>
+  <img src="./screenshots/desktop.png" alt="Desktop view of the Gabrielle Essence product preview card with the image on the left and product details on the right" width="520">
+  <img src="./screenshots/mobile.png" alt="Mobile view of the product preview card with the image stacked above the product details" width="220">
+</p>
 
 ## Overview
 
@@ -38,27 +37,29 @@ The card displays a perfume product with its image, category, name, description,
 Make sure Node.js and npm are installed, then:
 
 1. Clone the repository:
-git clone https://github.com/yasmin3802/product-preview-card-component.git
-
+```bash
+   git clone https://github.com/yasmin3802/product-preview-card-component.git
+```
 2. Go into the project folder:
-
-cd product-preview-card-component
-
+```bash
+   cd product-preview-card-component
+```
 3. Install dependencies:
-
-npm install
-
+```bash
+   npm install
+```
 4. Start the development server:
-
-npm run dev
-
+```bash
+   npm run dev
+```
 5. Open the local URL shown in your terminal.
 
 To create a production build and preview it:
 
+```bash
 npm run build
 npm run preview
-
+```
 
 ## What I Learned
 
