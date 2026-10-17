@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 
-<body class="min-h-screen bg-[#F2EAE2] text-[#1C232B] antialiased">
+<body class="min-h-screen bg-[#F2EAE2] font-sans text-[#1C232B] antialiased">
   <main class="flex min-h-screen items-center justify-center px-4 py-8 sm:px-6">
     <article
       class="grid w-full max-w-[600px] overflow-hidden rounded-xl bg-white shadow-xl shadow-black/5 md:grid-cols-2">
@@ -21,36 +21,38 @@
       </picture>
 
       <!-- Product details -->
-      <section class="flex flex-col p-6 sm:p-8">
-        <p class="text-xs font-medium uppercase tracking-[0.35em] text-[#6C7289]">
+      <div class="flex flex-col p-6 sm:p-8">
+        <p class="text-xs font-medium uppercase tracking-[0.4em] text-[#6C7289]">
           Perfume
         </p>
 
-        <h1 class="mt-4 font-['Fraunces'] text-3xl font-bold leading-tight text-[#1C232B]">
+        <h1 class="mt-4 font-display text-[32px] font-bold leading-[1.1] text-[#1C232B]">
           Gabrielle Essence Eau De Parfum
         </h1>
 
-        <p class="mt-5 text-sm leading-6 text-[#6C7289]">
+        <p class="mt-5 text-sm leading-[1.65] text-[#6C7289]">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
 
         <!-- Price -->
         <div class="mt-6 flex items-center gap-4">
-          <p class="font-['Fraunces'] text-3xl font-bold text-[#3D8168]">
-            $149.99
+          <p class="font-display text-[32px] font-bold text-[#3D8168]">
+            <span class="sr-only">Current price: </span>$149.99
           </p>
-
-          <p class="text-xs text-[#6C7289] line-through">$169.99</p>
+          <p class="text-xs text-[#6C7289]">
+            <span class="sr-only">Original price: </span>
+            <del>$169.99</del>
+          </p>
         </div>
 
         <!-- Add to cart -->
         <button type="button"
-          class="mt-auto inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-lg bg-[#3D8168] px-5 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-[#1A4032] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A4032] active:scale-[0.98]"
+          class="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-lg bg-[#3D8168] px-5 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-[#1A4032] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A4032] active:scale-[0.98] motion-reduce:transition-none motion-reduce:active:scale-100">
           <img src="/images/icon-cart.svg" alt="" aria-hidden="true" class="h-4 w-4" />
           Add to Cart
         </button>
-      </section>
+      </div>
     </article>
   </main>
 </body>
