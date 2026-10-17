@@ -1,12 +1,11 @@
 # Product Preview Card Component
 
-A responsive product preview card for **Gabrielle Essence Eau de Parfum**, built with HTML and Tailwind CSS. This project focuses on translating a visual design into a clean, accessible interface that adapts to mobile and desktop screens.
+A responsive product preview card for Gabrielle Essence Eau de Parfum, built with HTML and Tailwind CSS. The project focuses on turning a visual design into a clean, accessible interface that adapts to mobile and desktop screens.
 
 ## Preview
 
-**Live Demo:** [View the deployed website](https://6ad0c2afd6510a13325a1641--lovely-marzipan-faaced.netlify.app/)
-
-**Source Code:** [View the GitHub repository](https://github.com/yasmin3802/product-preview-card-component)
+**Live demo:** [View the deployed site](https://6ad0c2afd6510a13325a1641--lovely-marzipan-faaced.netlify.app/)
+**Source code:** [GitHub repository](https://github.com/yasmin3802/product-preview-card-component)
 
 ### Desktop
 ![Desktop view of the Gabrielle Essence product preview card with the image on the left and product details on the right](./screenshots/desktop.png)
@@ -14,100 +13,74 @@ A responsive product preview card for **Gabrielle Essence Eau de Parfum**, built
 ### Mobile
 ![Mobile view of the product preview card with the image stacked above the product details](./screenshots/mobile.png)
 
-## Project Overview
+## Overview
 
-The component presents a perfume product with its image, category, title, description, discounted price, original price, and an Add to Cart button.
-
-The main goal was to recreate the reference design while maintaining a responsive layout, clear visual hierarchy, and accessible interactions.
+The card displays a perfume product with its image, category, name, description, discounted price, original price, and an Add to Cart button. The Add to Cart button is a visual component only; it does not include cart functionality.
 
 ## Features
 
-- **Responsive layout:** The product image and information rearrange for smaller and larger screens.
-- **Responsive imagery:** Uses the appropriate product image for mobile and desktop viewports.
-- **Clear visual hierarchy:** Typography, spacing, and color distinguish the product details and pricing.
-- **Interactive button states:** Hover, keyboard-focus, and active states provide visual feedback.
-- **Semantic HTML:** Uses meaningful page structure and descriptive alternative text for the product image.
+- **Responsive layout:** two columns on desktop, a single stacked column on mobile.
+- **Responsive imagery:** a `<picture>` element serves a mobile-specific image on small screens.
+- **Typography:** Fraunces for the heading and price, Montserrat for body text.
+- **Interactive button:** hover, keyboard-focus, and pressed states.
+- **Accessibility:** semantic HTML, descriptive alt text, decorative icon hidden from screen readers, and screen-reader labels for the current and original price.
 
 ## Built With
 
 - HTML5
-- Tailwind CSS
-- Vite for local development and production builds
-- Git and GitHub for version control
-- Netlify for deployment
-
-## Implementation Notes
-
-### Responsive layout
-
-Tailwind CSS utility classes control the card's layout, spacing, typography, colors, and alignment. A responsive grid allows the product image and details to appear side by side on larger screens while adapting to a compact mobile layout.
-
-### Accessibility and interaction
-
-The product image includes descriptive alternative text, and the Add to Cart button has visible interaction states. Keyboard-focus styling helps users identify the currently focused control.
-
-## What I Learned
-
-This project helped me practice turning a visual reference into a working interface using utility-first CSS.
-
-In particular, I worked on:
-
-- Applying responsive layout utilities and breakpoint-based styling.
-- Using spacing, typography, and color to create a consistent visual hierarchy.
-- Adding hover and keyboard-focus styles to interactive elements.
-- Using Git and GitHub to manage source code and Netlify to publish a website.
-
-## Challenges and Problem-Solving
-
-One of the main challenges was refining the spacing, typography, and proportions so the component felt closer to the reference design across different screen sizes. I used Tailwind CSS classes to adjust the layout and styling rather than relying on a large collection of custom CSS rules.
-
-I also encountered Git setup difficulties during submission. Resolving them gave me practical experience with repository configuration and the importance of keeping generated files and installed dependencies out of source control when they are not needed in the repository.
+- Tailwind CSS v4
+- Vite
+- Git and GitHub
+- Netlify
 
 ## Running Locally
 
-To run the project locally, first make sure Node.js and npm are installed.
+Make sure Node.js and npm are installed, then:
 
 1. Clone the repository:
+git clone https://github.com/yasmin3802/product-preview-card-component.git
 
-   ```bash
-   git clone https://github.com/yasmin3802/product-preview-card-component.git
-   ```
+2. Go into the project folder:
 
-2. Navigate into the project directory:
+cd product-preview-card-component
 
-   ```bash
-   cd product-preview-card-component
-   ```
+3. Install dependencies:
 
-3. Install the project dependencies:
-
-   ```bash
-   npm install
-   ```
+npm install
 
 4. Start the development server:
 
-   ```bash
-   npm run dev
-   ```
+npm run dev
 
-   Open the local URL displayed in your terminal.
+5. Open the local URL shown in your terminal.
 
-To create a production build, run:
+To create a production build and preview it:
 
-```bash
 npm run build
-```
+npm run preview
 
-*These commands assume the repository contains a `package.json` with the `dev` and `build` scripts shown above.*
+
+## What I Learned
+
+- Using Tailwind utility classes for layout, spacing, typography, and color.
+- Switching images with `<picture>` for different screen sizes.
+- Registering custom fonts in Tailwind v4 with `@theme`.
+- Writing accessible markup: labeled prices, hidden decorative icons, and visible focus styles.
+- Using Git and GitHub for version control and Netlify for deployment.
+
+## Challenges
+
+- **Matching the reference design:** I compared my page with the design at mobile and desktop widths and adjusted spacing and type sizes.
+- **A broken cart icon:** the button tag was missing a closing `>`, so the icon never rendered. Inspecting the page in the browser helped me find it.
+- **Fonts not applying:** the font import was in the wrong order and Montserrat was never set as the default. Fixing the import order and defining theme fonts solved it.
+- **Git setup:** I learned to keep generated files and dependencies like `node_modules` out of the repository.
 
 ## Future Improvements
 
-- Compare the finished page more closely against the reference at mobile and desktop sizes.
-- Continue improving accessibility and responsive behavior.
-- Refine HTML structure and styling for easier maintenance.
-- Build a more consistent workflow for commits, testing, and deployment.
+- Add real cart behavior with JavaScript.
+- Test with a screen reader and an automated accessibility checker.
+- Add a screenshot of the keyboard focus state.
 
 ## Acknowledgments
 
-Challenge and design reference provided by [Frontend Mentor](https://www.frontendmentor.io/).
+Design and challenge by [Frontend Mentor](https://www.frontendmentor.io/).
