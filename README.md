@@ -1,105 +1,113 @@
-# Frontend Mentor - Product preview card component
+# Product Preview Card Component
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+A responsive product preview card for **Gabrielle Essence Eau de Parfum**, built with HTML and Tailwind CSS. This project focuses on translating a visual design into a clean, accessible interface that adapts to mobile and desktop screens.
 
-## Welcome! 👋
+## Preview
 
-Thanks for checking out this front-end coding challenge.
+**Live Demo:** [View the deployed website](https://6ad0c2afd6510a13325a1641--lovely-marzipan-faaced.netlify.app/)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Source Code:** [View the GitHub repository](https://github.com/yasmin3802/product-preview-card-component)
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### Desktop
+![Desktop view of the Gabrielle Essence product preview card with the image on the left and product details on the right](./screenshots/desktop.png)
 
-## The challenge
+### Mobile
+![Mobile view of the product preview card with the image stacked above the product details](./screenshots/mobile.png)
 
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
+## Project Overview
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+The component presents a perfume product with its image, category, title, description, discounted price, original price, and an Add to Cart button.
 
-Your users should be able to:
+The main goal was to recreate the reference design while maintaining a responsive layout, clear visual hierarchy, and accessible interactions.
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+## Features
 
-### Want some support on the challenge? 
+- **Responsive layout:** The product image and information rearrange for smaller and larger screens.
+- **Responsive imagery:** Uses the appropriate product image for mobile and desktop viewports.
+- **Clear visual hierarchy:** Typography, spacing, and color distinguish the product details and pricing.
+- **Interactive button states:** Hover, keyboard-focus, and active states provide visual feedback.
+- **Semantic HTML:** Uses meaningful page structure and descriptive alternative text for the product image.
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## Built With
 
-## Where to find everything
+- HTML5
+- Tailwind CSS
+- Vite for local development and production builds
+- Git and GitHub for version control
+- Netlify for deployment
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+## Implementation Notes
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Responsive layout
 
-If you would like the Figma design file to gain experience using professional tools and build more accurate projects faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Tailwind CSS utility classes control the card's layout, spacing, typography, colors, and alignment. A responsive grid allows the product image and details to appear side by side on larger screens while adapting to a compact mobile layout.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Accessibility and interaction
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+The product image includes descriptive alternative text, and the Add to Cart button has visible interaction states. Keyboard-focus styling helps users identify the currently focused control.
 
-## Using AI coding assistants
+## What I Learned
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+This project helped me practice turning a visual reference into a working interface using utility-first CSS.
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+In particular, I worked on:
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+- Applying responsive layout utilities and breakpoint-based styling.
+- Using spacing, typography, and color to create a consistent visual hierarchy.
+- Adding hover and keyboard-focus styles to interactive elements.
+- Using Git and GitHub to manage source code and Netlify to publish a website.
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+## Challenges and Problem-Solving
 
-## Building your project
+One of the main challenges was refining the spacing, typography, and proportions so the component felt closer to the reference design across different screen sizes. I used Tailwind CSS classes to adjust the layout and styling rather than relying on a large collection of custom CSS rules.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+I also encountered Git setup difficulties during submission. Resolving them gave me practical experience with repository configuration and the importance of keeping generated files and installed dependencies out of source control when they are not needed in the repository.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## Running Locally
 
-## Deploying your project
+To run the project locally, first make sure Node.js and npm are installed.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+1. Clone the repository:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+   ```bash
+   git clone https://github.com/yasmin3802/product-preview-card-component.git
+   ```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
+2. Navigate into the project directory:
 
-## Create a custom `README.md`
+   ```bash
+   cd product-preview-card-component
+   ```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+3. Install the project dependencies:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+   ```bash
+   npm install
+   ```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+4. Start the development server:
 
-## Submitting your solution
+   ```bash
+   npm run dev
+   ```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
+   Open the local URL displayed in your terminal.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+To create a production build, run:
 
-## Sharing your solution
+```bash
+npm run build
+```
 
-There are multiple places you can share your solution:
+*These commands assume the repository contains a `package.json` with the `dev` and `build` scripts shown above.*
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+## Future Improvements
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- Compare the finished page more closely against the reference at mobile and desktop sizes.
+- Continue improving accessibility and responsive behavior.
+- Refine HTML structure and styling for easier maintenance.
+- Build a more consistent workflow for commits, testing, and deployment.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+## Acknowledgments
 
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Challenge and design reference provided by [Frontend Mentor](https://www.frontendmentor.io/).
