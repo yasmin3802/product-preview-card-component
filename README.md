@@ -4,11 +4,11 @@ A responsive product preview card for Gabrielle Essence Eau de Parfum, built wit
 
 ## Preview
 
-**Live demo:** [View the deployed site](https://lovely-marzipan-faaced.netlify.app/)
-**Source code:** [GitHub repository](https://github.com/yasmin3802/product-preview-card-component)
+- **Live demo:** [View the deployed site](https://lovely-marzipan-faaced.netlify.app/)
+- **Source code:** [GitHub repository](https://github.com/yasmin3802/product-preview-card-component)
 
 <p>
-  <img src="./screenshots/desktop.png" alt="Desktop view of the Gabrielle Essence product preview card with the image on the left and product details on the right" width="520">
+  <img src="./screenshots/desktop.png" alt="Desktop view of the Gabrielle Essence product preview card with the image on the left and product details on the right" width="500">
   <img src="./screenshots/mobile.png" alt="Mobile view of the product preview card with the image stacked above the product details" width="220">
 </p>
 
